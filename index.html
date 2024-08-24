@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing page designs</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle1">
+        <img src="./img/Mask group.png" alt="Hình ảnh Cà phê 1" />
+      </div>
+      <div class="circle2">
+        <img src="./img/unsplash_XtUd5SiX464.png" alt="Hình ảnh Cà phê 2" />
+      </div>
+
+      <div class="header"></div>
+
+      <div class="button-container"></div>
+
+      <div class="modal" id="feedbackModal">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeModal()">&times;</span>
+          <div class="modal-color"></div>
+          <h2>Send feedback!</h2>
+          <p>Leave your feedback here.</p>
+          <input type="text" placeholder="Type text..." />
+          <button onclick="closeModal()">Yeah, thanks!</button>
+        </div>
+      </div>
+  
+      <script>
+        function closeModal() {
+          document.getElementById('feedbackModal').style.display = 'none';
+        }
+      </script>
+    </div>
+  </body>
+</html>
